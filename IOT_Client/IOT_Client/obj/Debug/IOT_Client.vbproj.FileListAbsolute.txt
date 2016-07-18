@@ -1,0 +1,11 @@
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\bin\Debug\IOT_Client.exe.config
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\bin\Debug\IOT_Client.exe
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\bin\Debug\IOT_Client.pdb
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\bin\Debug\IOT_Client.xml
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Form1.resources
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Resources.resources
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.vbproj.GenerateResource.Cache
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.exe
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.xml
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.pdb
+c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Form2.resources
