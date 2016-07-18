@@ -9,3 +9,14 @@ c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\ob
 c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.xml
 c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.pdb
 c:\users\sepkjaer\documents\visual studio 2013\Projects\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Form2.resources
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\bin\Debug\IOT_Client.exe.config
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.exe
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.xml
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.pdb
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\bin\Debug\IOT_Client.exe
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\bin\Debug\IOT_Client.pdb
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\bin\Debug\IOT_Client.xml
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Form1.resources
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Form2.resources
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Resources.resources
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.vbproj.GenerateResource.Cache

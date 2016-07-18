@@ -12,6 +12,7 @@ Public Class Form1
     Dim access_reader As StreamReader
     Dim number_of_user As Integer
     Public Shared user_index As Integer = 1
+    Public Shared current_form As Integer = 1
     Dim access As String
 
     Public Sub read_data()
@@ -31,7 +32,7 @@ Public Class Form1
                     pass_reader.Close()
                     Form2.Label3.Text = read_access()
                     Form2.Label4.Text = TextBox1.Text
-
+                    current_form = 2
                     Form2.Visible = True
                     Me.Visible = False
                     Exit For
@@ -63,7 +64,14 @@ read_data_label:
     End Function
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        End
+        NotifyIcon1.BalloonTipText = "IOT_CLIENT is Still Running"
+        NotifyIcon1.ShowBalloonTip(70)
+        Me.ShowInTaskbar = False
+        Me.WindowState = FormWindowState.Minimized
+        ContextMenuStrip1.Enabled = True
+
+
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -79,7 +87,7 @@ read_data_label:
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        ContextMenuStrip1.Enabled = False
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -101,5 +109,26 @@ read_data_label:
         Label6.Visible = False
         Button1.Enabled = True
         Timer1.Enabled = False
+    End Sub
+
+    Private Sub contextmenu_exit(sender As Object, e As EventArgs) Handles Exi.Click
+        End
+    End Sub
+    Private Sub contextmenu_show(sender As Object, e As EventArgs) Handles Show.Click
+        ContextMenuStrip1.Enabled = False
+        If current_form = 1 Then
+            Me.Visible = True
+            Me.ShowInTaskbar = True
+            Me.WindowState = FormWindowState.Normal
+        Else
+            Form2.Visible = True
+            Form2.ShowInTaskbar = True
+            Form2.WindowState = FormWindowState.Normal
+
+        End If
+
+    End Sub
+    Private Sub contextmenu_click(sender As Object, e As EventArgs) Handles NotifyIcon1.DoubleClick
+        contextmenu_show(sender, e)
     End Sub
 End Class
