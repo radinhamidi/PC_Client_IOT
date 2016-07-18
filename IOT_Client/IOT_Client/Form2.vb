@@ -1,5 +1,7 @@
-﻿Public Class Form2
-
+﻿Imports System.Net
+Imports System.IO
+Public Class Form2
+    Dim client As New WebClient
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Form1.ContextMenuStrip1.Enabled = True
         Me.ShowInTaskbar = False
@@ -14,5 +16,9 @@
         Form1.Visible = True
         Form1.current_form = 1
         Me.Visible = False
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

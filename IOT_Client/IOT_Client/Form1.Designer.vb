@@ -175,18 +175,18 @@ Partial Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Exi, Me.Show})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(270, 124)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(149, 76)
         '
         'Exi
         '
         Me.Exi.Name = "Exi"
-        Me.Exi.Size = New System.Drawing.Size(269, 38)
+        Me.Exi.Size = New System.Drawing.Size(148, 36)
         Me.Exi.Text = "Exit"
         '
         'Show
         '
         Me.Show.Name = "Show"
-        Me.Show.Size = New System.Drawing.Size(269, 38)
+        Me.Show.Size = New System.Drawing.Size(148, 36)
         Me.Show.Text = "Show"
         '
         'Form1

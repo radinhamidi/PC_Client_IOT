@@ -5,6 +5,7 @@ Public Class Form1
     Dim user_address As String = "http://sepandhaghighi.github.io/elec_3/user.txt"
     Dim pass_address As String = "http://sepandhaghighi.github.io/elec_3/pass.txt"
     Dim access_address As String = "http://sepandhaghighi.github.io/elec_3/access.txt"
+    Dim image_address As String = "http://sepandhaghighi.github.io/elec_3/image/"
     Dim client As New WebClient
 
     Dim user_reader As StreamReader
@@ -30,6 +31,7 @@ Public Class Form1
                     user_index = i
                     user_reader.Close()
                     pass_reader.Close()
+                    show_image()
                     Form2.Label3.Text = read_access()
                     Form2.Label4.Text = TextBox1.Text
                     current_form = 2
@@ -51,6 +53,15 @@ read_data_label:
         Label3.Visible = True
         Button1.Enabled = False
         Timer1.Enabled = True
+    End Sub
+    Public Sub show_image()
+        On Error GoTo load_error
+        image_address = image_address + Str(user_index) + ".jpg"
+        image_address = image_address.Replace(" ", "")
+        Form2.PictureBox1.Image = Bitmap.FromStream(New MemoryStream(New WebClient().DownloadData(image_address)))
+        Exit Sub
+load_error:
+        Form2.Label5.Visible = True
     End Sub
     Public Function read_access() As String
         For i = 1 To user_index
