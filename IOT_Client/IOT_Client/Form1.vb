@@ -16,7 +16,13 @@ Public Class Form1
     Public Shared user_index As Integer = 1
     Public Shared current_form As Integer = 1
     Dim access As String
-
+    Public Sub clear_label()
+        Label3.Visible = False
+        Label4.Visible = False
+        Label5.Visible = False
+        Label6.Visible = False
+        Label7.Visible = False
+    End Sub
     Public Sub read_data()
         On Error GoTo read_data_label
         If Len(TextBox1.Text) = 0 Or Len(TextBox2.Text) = 0 Then
@@ -37,6 +43,7 @@ Public Class Form1
                     Form2.Label4.Text = TextBox1.Text
                     current_form = 2
                     Form2.Visible = True
+                    clear_label()
                     Me.Visible = False
                     Exit For
 
@@ -51,6 +58,7 @@ Public Class Form1
         End If
         Exit Sub
 read_data_label:
+        Label7.Visible = False
         Label3.Visible = True
         Button1.Enabled = False
         Timer1.Enabled = True
@@ -104,7 +112,7 @@ load_error:
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If My.Computer.Network.IsAvailable Then
-
+            Label7.Visible = True
             read_data()
         Else
             Label4.Visible = True

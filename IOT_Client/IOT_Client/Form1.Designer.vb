@@ -40,6 +40,7 @@ Partial Class Form1
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Exi = New System.Windows.Forms.ToolStripMenuItem()
         Me.Show = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Label7 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -189,12 +190,25 @@ Partial Class Form1
         Me.Show.Size = New System.Drawing.Size(148, 36)
         Me.Show.Text = "Show"
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(394, 327)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(335, 42)
+        Me.Label7.TabIndex = 11
+        Me.Label7.Text = "Authentication . . ."
+        Me.Label7.Visible = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1062, 507)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -231,5 +245,6 @@ Partial Class Form1
     Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents Exi As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents Show As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents Label7 As System.Windows.Forms.Label
 
 End Class

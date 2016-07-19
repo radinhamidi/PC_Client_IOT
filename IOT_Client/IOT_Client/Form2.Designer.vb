@@ -30,6 +30,8 @@ Partial Class Form2
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -108,6 +110,22 @@ Partial Class Form2
         Me.Label5.Text = "No Image"
         Me.Label5.Visible = False
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(101, 447)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(430, 142)
+        Me.Button3.TabIndex = 8
+        Me.Button3.Text = "Get Data"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(690, 396)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(466, 31)
+        Me.TextBox1.TabIndex = 9
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -116,6 +134,8 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1230, 770)
         Me.ControlBox = False
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
@@ -141,4 +161,6 @@ Partial Class Form2
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class
