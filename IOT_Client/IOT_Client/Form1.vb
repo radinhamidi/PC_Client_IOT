@@ -6,6 +6,7 @@ Public Class Form1
     Dim pass_address As String = "http://sepandhaghighi.github.io/elec_3/pass.txt"
     Dim access_address As String = "http://sepandhaghighi.github.io/elec_3/access.txt"
     Dim image_address As String = "http://sepandhaghighi.github.io/elec_3/image/"
+    Dim image_address_2 As String = ""
     Dim client As New WebClient
 
     Dim user_reader As StreamReader
@@ -56,9 +57,9 @@ read_data_label:
     End Sub
     Public Sub show_image()
         On Error GoTo load_error
-        image_address = image_address + Str(user_index) + ".jpg"
-        image_address = image_address.Replace(" ", "")
-        Form2.PictureBox1.Image = Bitmap.FromStream(New MemoryStream(New WebClient().DownloadData(image_address)))
+        image_address_2 = image_address + Str(user_index) + ".jpg"
+        image_address_2 = image_address_2.Replace(" ", "")
+        Form2.PictureBox1.Image = Bitmap.FromStream(New MemoryStream(client.DownloadData(image_address_2)))
         Exit Sub
 load_error:
         Form2.Label5.Visible = True
