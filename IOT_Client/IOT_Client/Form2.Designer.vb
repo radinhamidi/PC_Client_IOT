@@ -125,9 +125,10 @@ Partial Class Form2
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(690, 396)
+        Me.TextBox1.Location = New System.Drawing.Point(146, 111)
+        Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(466, 31)
+        Me.TextBox1.Size = New System.Drawing.Size(1010, 672)
         Me.TextBox1.TabIndex = 9
         '
         'Label6

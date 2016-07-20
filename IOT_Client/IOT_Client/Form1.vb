@@ -8,7 +8,6 @@ Public Class Form1
     Dim image_address As String = "http://sepandhaghighi.github.io/elec_3/image/"
     Dim image_address_2 As String = ""
     Dim client As New WebClient
-
     Dim user_reader As StreamReader
     Dim pass_reader As StreamReader
     Dim access_reader As StreamReader
