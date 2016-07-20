@@ -28,8 +28,6 @@ Public Class Form2
         string_array = result_post.Split("{")
         If string_array(1)(1) <> "r" Then
             list_maker(string_array)
-        Else
-            server_connect()
         End If
     End Sub
     Public Function string_spliter(ByVal input As String, ByVal first As Integer, ByVal last As Integer)
@@ -99,15 +97,15 @@ sendrequest_error:
         Form1.Visible = True
         Form1.current_form = 1
         Form1.clear_label()
-        Label5.Visible=False
+        Label5.Visible = False
+        Timer1.Enabled = False
+        Timer2.Enabled = False
         Me.Visible = False
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label6.Text = Date.Now.ToShortDateString
         Label7.Text = Date.Now.ToShortTimeString
-        Timer1.Enabled = True
-        Timer2.Enabled = True
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)

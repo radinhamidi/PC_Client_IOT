@@ -212,7 +212,7 @@ Partial Class Form2
         '
         'Timer2
         '
-        Me.Timer2.Interval = 1000
+        Me.Timer2.Interval = 10
         '
         'Form2
         '

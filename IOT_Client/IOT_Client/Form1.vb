@@ -48,6 +48,7 @@ Public Class Form1
 
                 End If
             Next
+            clear_label()
             user_reader.Close()
             pass_reader.Close()
             client.Dispose()
@@ -112,6 +113,8 @@ load_error:
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If My.Computer.Network.IsAvailable Then
             Label7.Visible = True
+            Form2.Timer1.Enabled = True
+            Form2.Timer2.Enabled = True
             read_data()
         Else
             Label4.Visible = True
