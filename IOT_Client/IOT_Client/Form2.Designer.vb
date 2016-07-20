@@ -42,6 +42,8 @@ Partial Class Form2
         Me.Label13 = New System.Windows.Forms.Label()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label14 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -205,14 +207,36 @@ Partial Class Form2
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 25
-        Me.ListBox1.Location = New System.Drawing.Point(1024, 12)
+        Me.ListBox1.Location = New System.Drawing.Point(1054, 154)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(338, 54)
+        Me.ListBox1.Size = New System.Drawing.Size(338, 654)
         Me.ListBox1.TabIndex = 18
         '
         'Timer2
         '
-        Me.Timer2.Interval = 10
+        Me.Timer2.Interval = 1000
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(1088, 85)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(281, 51)
+        Me.Label14.TabIndex = 19
+        Me.Label14.Text = "Patient Lists :"
+        '
+        'Label15
+        '
+        Me.Label15.AutoSize = True
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.ForeColor = System.Drawing.Color.Red
+        Me.Label15.Location = New System.Drawing.Point(28, 901)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(543, 42)
+        Me.Label15.TabIndex = 20
+        Me.Label15.Text = "Problem In Network Connection"
+        Me.Label15.Visible = False
         '
         'Form2
         '
@@ -222,6 +246,8 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1773, 1004)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label12)
@@ -267,4 +293,6 @@ Partial Class Form2
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents Label15 As System.Windows.Forms.Label
 End Class
