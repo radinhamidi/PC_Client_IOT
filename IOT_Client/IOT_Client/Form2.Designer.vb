@@ -31,11 +31,17 @@ Partial Class Form2
         Me.Label4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -114,23 +120,6 @@ Partial Class Form2
         Me.Label5.Text = "No Image"
         Me.Label5.Visible = False
         '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(416, 837)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(430, 142)
-        Me.Button3.TabIndex = 8
-        Me.Button3.Text = "Get Data"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(146, 111)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(1010, 672)
-        Me.TextBox1.TabIndex = 9
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -155,6 +144,76 @@ Partial Class Form2
         '
         Me.Timer1.Interval = 60000
         '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(28, 65)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(132, 42)
+        Me.Label8.TabIndex = 12
+        Me.Label8.Text = "Pulse :"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(28, 182)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(182, 42)
+        Me.Label9.TabIndex = 13
+        Me.Label9.Text = "Humidity :"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(28, 309)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(230, 42)
+        Me.Label10.TabIndex = 14
+        Me.Label10.Text = "Temprature :"
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(339, 65)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(0, 42)
+        Me.Label11.TabIndex = 15
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(339, 182)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(0, 42)
+        Me.Label12.TabIndex = 16
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(339, 309)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(0, 42)
+        Me.Label13.TabIndex = 17
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 25
+        Me.ListBox1.Location = New System.Drawing.Point(1024, 12)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(338, 54)
+        Me.ListBox1.TabIndex = 18
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 1000
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -163,10 +222,15 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1773, 1004)
         Me.ControlBox = False
+        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.Label11)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
@@ -192,9 +256,15 @@ Partial Class Form2
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
+    Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents Timer2 As System.Windows.Forms.Timer
 End Class
