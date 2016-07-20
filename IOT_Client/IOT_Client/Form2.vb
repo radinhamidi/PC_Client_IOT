@@ -27,7 +27,9 @@ Public Class Form2
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Label6.Text = Date.Now.ToShortDateString
+        Label7.Text = Date.Now.ToShortTimeString
+        Timer1.Enabled = True
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
@@ -41,5 +43,9 @@ Public Class Form2
         TextBox1.Text = strData
         reader.Close()
         response.Close()
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Label7.Text = Date.Now.ToShortTimeString
     End Sub
 End Class
