@@ -22,13 +22,17 @@ Public Class Form2
 
 
     Public Sub server_connect()
+        result_post = ""
         data = Encoding.UTF8.GetBytes(download_strReq)
         result_post = SendRequest("http://104.236.99.97/~mreza/users.php", data, "text/json", "POST")
         result_post = string_spliter(result_post, 31, result_post.Length)
         string_array = result_post.Split("{")
         If string_array(1)(1) <> "r" Then
             list_maker(string_array)
+            Label16.Text = 1
+        Else
         End If
+        TextBox1.Text = result_post
     End Sub
     Public Function string_spliter(ByVal input As String, ByVal first As Integer, ByVal last As Integer)
         Dim string_local As String = ""
@@ -106,6 +110,8 @@ sendrequest_error:
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Label6.Text = Date.Now.ToShortDateString
         Label7.Text = Date.Now.ToShortTimeString
+        Timer1.Enabled = True
+        Timer2.Enabled = True
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
@@ -131,6 +137,7 @@ sendrequest_error:
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         server_connect()
+        Label16.Text = Val(Label16.Text) + 1
     End Sub
 End Class
 

@@ -44,6 +44,8 @@ Partial Class Form2
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label16 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -214,7 +216,7 @@ Partial Class Form2
         '
         'Timer2
         '
-        Me.Timer2.Interval = 1000
+        Me.Timer2.Interval = 3000
         '
         'Label14
         '
@@ -238,6 +240,23 @@ Partial Class Form2
         Me.Label15.Text = "Problem In Network Connection"
         Me.Label15.Visible = False
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(453, 230)
+        Me.TextBox1.Multiline = True
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(377, 463)
+        Me.TextBox1.TabIndex = 21
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Location = New System.Drawing.Point(388, 799)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(24, 25)
+        Me.Label16.TabIndex = 22
+        Me.Label16.Text = "1"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -246,6 +265,8 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1773, 1004)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label16)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.ListBox1)
@@ -295,4 +316,6 @@ Partial Class Form2
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label16 As System.Windows.Forms.Label
 End Class
