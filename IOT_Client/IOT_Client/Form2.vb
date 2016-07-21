@@ -20,6 +20,7 @@ Public Class Form2
     Dim pulse_list(100) As String
     Dim temp_list(100) As String
     Dim hum_list(100) As String
+    Dim name_list(100) As String
     Dim result_post As String
     Dim user_post As String
     Dim data() As Byte
@@ -85,21 +86,26 @@ Public Class Form2
                 temp_list(i) = json.GetProperty("Temp").Value
                 hum_list(i) = json.GetProperty("Humidity").Value
                 pulse_list(i) = json.GetProperty("Pulse").Value
+
             End If
         Next
+
     End Sub
     Public Sub list_filler(ByVal input() As String)
         Dim json As JSONObject
         Dim UID As String
+        Dim name As String
         For i = 1 To input.Length - 1
             json = New JSONObject(input(i))
             UID = json.GetProperty("UID").Value
+            name = json.GetProperty("Name").Value
             If UID <> Nothing Then ' if UID is valid condition
                 If ListBox1.Items.Contains(UID) = False Then
                     'temp_list(Val(UID)) = json.GetProperty("Temp").Value
                     'hum_list(Val(UID)) = json.GetProperty("Humidity").Value
                     'pulse_list(Val(UID)) = json.GetProperty("Pulse").Value
                     ListBox1.Items.Add(UID)
+                    name_list(i) = name
                 End If
             End If
         Next
@@ -186,6 +192,7 @@ sendrequest_error:
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
         clear_lists()
         get_data(ListBox1.SelectedItem)
+        Label20.Text = name_list(ListBox1.SelectedItem)
         Label11.Text = pulse_list(ListBox1.SelectedItem)
         Label12.Text = hum_list(ListBox1.SelectedItem)
         Label13.Text = temp_list(ListBox1.SelectedItem)
@@ -194,7 +201,8 @@ sendrequest_error:
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
 
         server_connect()
-        Label16.Text = Val(Label16.Text) + 1
+        'Label16.Text = Val(Label16.Text) + 1 is only for test
+
     End Sub
 
     Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
