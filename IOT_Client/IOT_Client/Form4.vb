@@ -47,4 +47,40 @@
     Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles Chart1.Click
 
     End Sub
+
+    Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
+        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
+        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
+        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
+    End Sub
+
+    Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
+        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
+        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
+        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
+    End Sub
+
+    Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
+        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
+        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
+        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
+    End Sub
+
+    Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
+        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
+        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
+        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
+    End Sub
+
+    Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
+        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
+        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
+        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
+    End Sub
+
+    Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
+        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
+        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
+        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
+    End Sub
 End Class
