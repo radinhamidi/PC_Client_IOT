@@ -176,18 +176,18 @@ Partial Class Form1
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Exi, Me.Show})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(149, 76)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(174, 80)
         '
         'Exi
         '
         Me.Exi.Name = "Exi"
-        Me.Exi.Size = New System.Drawing.Size(148, 36)
+        Me.Exi.Size = New System.Drawing.Size(173, 38)
         Me.Exi.Text = "Exit"
         '
         'Show
         '
         Me.Show.Name = "Show"
-        Me.Show.Size = New System.Drawing.Size(148, 36)
+        Me.Show.Size = New System.Drawing.Size(173, 38)
         Me.Show.Text = "Show"
         '
         'Label7
@@ -221,6 +221,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Login"
