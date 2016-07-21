@@ -44,10 +44,19 @@ Partial Class Form2
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.ListBox2 = New System.Windows.Forms.ListBox()
+        Me.ListBox3 = New System.Windows.Forms.ListBox()
+        Me.ListBox4 = New System.Windows.Forms.ListBox()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label19 = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -152,67 +161,67 @@ Partial Class Form2
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(28, 65)
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(35, 76)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(132, 42)
+        Me.Label8.Size = New System.Drawing.Size(86, 29)
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Pulse :"
         '
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(28, 182)
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(35, 193)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(182, 42)
+        Me.Label9.Size = New System.Drawing.Size(118, 29)
         Me.Label9.TabIndex = 13
         Me.Label9.Text = "Humidity :"
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(28, 309)
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(35, 320)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(230, 42)
+        Me.Label10.Size = New System.Drawing.Size(151, 29)
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "Temprature :"
         '
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(339, 65)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(346, 76)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(0, 42)
+        Me.Label11.Size = New System.Drawing.Size(0, 29)
         Me.Label11.TabIndex = 15
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(339, 182)
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(346, 193)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(0, 42)
+        Me.Label12.Size = New System.Drawing.Size(0, 29)
         Me.Label12.TabIndex = 16
         '
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(339, 309)
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(346, 320)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(0, 42)
+        Me.Label13.Size = New System.Drawing.Size(0, 29)
         Me.Label13.TabIndex = 17
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 25
-        Me.ListBox1.Location = New System.Drawing.Point(1054, 154)
+        Me.ListBox1.Location = New System.Drawing.Point(1169, 139)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(338, 654)
+        Me.ListBox1.Size = New System.Drawing.Size(145, 654)
         Me.ListBox1.TabIndex = 18
         '
         'Timer2
@@ -222,10 +231,10 @@ Partial Class Form2
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(1088, 85)
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(1160, 77)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(281, 51)
+        Me.Label14.Size = New System.Drawing.Size(154, 29)
         Me.Label14.TabIndex = 19
         Me.Label14.Text = "Patient Lists :"
         '
@@ -240,14 +249,6 @@ Partial Class Form2
         Me.Label15.TabIndex = 20
         Me.Label15.Text = "Problem In Network Connection"
         Me.Label15.Visible = False
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(453, 230)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(377, 463)
-        Me.TextBox1.TabIndex = 21
         '
         'Label16
         '
@@ -267,6 +268,100 @@ Partial Class Form2
         Me.Button3.Text = "Setting"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'ContextMenuStrip1
+        '
+        Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
+        Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(86, 4)
+        '
+        'TableLayoutPanel1
+        '
+        Me.TableLayoutPanel1.ColumnCount = 4
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20.0!))
+        Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Right
+        Me.TableLayoutPanel1.Location = New System.Drawing.Point(1765, 0)
+        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
+        Me.TableLayoutPanel1.RowCount = 2
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.0!))
+        Me.TableLayoutPanel1.Size = New System.Drawing.Size(8, 1004)
+        Me.TableLayoutPanel1.TabIndex = 24
+        '
+        'ListBox2
+        '
+        Me.ListBox2.FormattingEnabled = True
+        Me.ListBox2.ItemHeight = 25
+        Me.ListBox2.Location = New System.Drawing.Point(995, 139)
+        Me.ListBox2.Name = "ListBox2"
+        Me.ListBox2.Size = New System.Drawing.Size(136, 654)
+        Me.ListBox2.TabIndex = 25
+        '
+        'ListBox3
+        '
+        Me.ListBox3.FormattingEnabled = True
+        Me.ListBox3.ItemHeight = 25
+        Me.ListBox3.Location = New System.Drawing.Point(821, 139)
+        Me.ListBox3.Name = "ListBox3"
+        Me.ListBox3.Size = New System.Drawing.Size(138, 654)
+        Me.ListBox3.TabIndex = 26
+        '
+        'ListBox4
+        '
+        Me.ListBox4.FormattingEnabled = True
+        Me.ListBox4.ItemHeight = 25
+        Me.ListBox4.Location = New System.Drawing.Point(647, 139)
+        Me.ListBox4.Name = "ListBox4"
+        Me.ListBox4.Size = New System.Drawing.Size(138, 654)
+        Me.ListBox4.TabIndex = 27
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label17.Location = New System.Drawing.Point(679, 78)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(74, 29)
+        Me.Label17.TabIndex = 28
+        Me.Label17.Text = "Pulse"
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label18.Location = New System.Drawing.Point(834, 78)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(106, 29)
+        Me.Label18.TabIndex = 29
+        Me.Label18.Text = "Humidity"
+        '
+        'Label19
+        '
+        Me.Label19.AutoSize = True
+        Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label19.Location = New System.Drawing.Point(1019, 78)
+        Me.Label19.Name = "Label19"
+        Me.Label19.Size = New System.Drawing.Size(77, 29)
+        Me.Label19.TabIndex = 30
+        Me.Label19.Text = "Temp"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.Label8)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.Label12)
+        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Location = New System.Drawing.Point(25, 213)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(580, 398)
+        Me.GroupBox1.TabIndex = 31
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Last Seen :"
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -275,18 +370,19 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1773, 1004)
         Me.ControlBox = False
+        Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Label19)
+        Me.Controls.Add(Me.Label18)
+        Me.Controls.Add(Me.Label17)
+        Me.Controls.Add(Me.ListBox4)
+        Me.Controls.Add(Me.ListBox3)
+        Me.Controls.Add(Me.ListBox2)
+        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label16)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.ListBox1)
-        Me.Controls.Add(Me.Label13)
-        Me.Controls.Add(Me.Label12)
-        Me.Controls.Add(Me.Label11)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -302,6 +398,8 @@ Partial Class Form2
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "IOT"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -327,7 +425,15 @@ Partial Class Form2
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Label15 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents ContextMenuStrip1 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents TableLayoutPanel1 As System.Windows.Forms.TableLayoutPanel
+    Friend WithEvents ListBox2 As System.Windows.Forms.ListBox
+    Friend WithEvents ListBox3 As System.Windows.Forms.ListBox
+    Friend WithEvents ListBox4 As System.Windows.Forms.ListBox
+    Friend WithEvents Label17 As System.Windows.Forms.Label
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents Label19 As System.Windows.Forms.Label
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

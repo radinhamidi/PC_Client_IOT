@@ -6,33 +6,61 @@ Imports System.Text.RegularExpressions
 Public Class Form2
     Dim client As New WebClient
     Dim upload_strReq As String = "{""reqtype"":""upload"", ""uid"":""1"" , ""password"":""123"", ""reqtime"":""12356"",""temperature"":""30"",""humidity"":""27.23"",""pulse"":""3002""}"
-    Dim download_strReq As String = "{""reqtype"":""download"", ""uid"":""1"" , ""password"":""123"", ""reqtime"":""12356""}"
+    Dim download_strReq_1 As String = "{""reqtype"":""download"", ""uid"":"
+    Dim download_strReq_2 As String = ", ""password"":""123"", ""reqtime"":""12356""}"
+    Dim get_users As String = "{""reqtype"":""getusers""}"
     Dim strData As String
     Dim dataStream As Stream
     Dim reader As StreamReader
     Dim request As HttpWebRequest
     Dim response As HttpWebResponse
-    Dim string_array() As String
+    Dim string_array_data() As String
+    Dim string_array_users() As String
     Dim UID_list(100) As String
     Dim pulse_list(100) As String
     Dim temp_list(100) As String
     Dim hum_list(100) As String
     Dim result_post As String
+    Dim user_post As String
     Dim data() As Byte
-
-
-    Public Sub server_connect()
+    Dim users() As Byte
+    Dim data_list(10) As String
+    Public Sub clear_lists()
+        ListBox2.Items.Clear()
+        ListBox3.Items.Clear()
+        ListBox4.Items.Clear()
+    End Sub
+    Public Sub get_data(ByVal index As String)
         result_post = ""
-        data = Encoding.UTF8.GetBytes(download_strReq)
-        result_post = SendRequest("http://104.236.99.97/~mreza/users.php", data, "text/json", "POST")
+        data = Encoding.UTF8.GetBytes(download_strReq_1 + """" + index + """" + download_strReq_2)
+        result_post = SendRequest("http://autiot.coolpage.biz/users.php", data, "text/json", "POST")
         result_post = string_spliter(result_post, 31, result_post.Length)
-        string_array = result_post.Split("{")
-        If string_array(1)(1) <> "r" Then
-            list_maker(string_array)
-            Label16.Text = 1
-        Else
+        string_array_data = result_post.Split("{")
+        'TextBox1.Text = download_strReq_1 + """" + index + """" + download_strReq_2
+        list_maker(string_array_data)
+    End Sub
+    Public Sub server_connect()
+
+        user_post = ""
+        users = Encoding.UTF8.GetBytes(get_users)
+        user_post = SendRequest("http://autiot.coolpage.biz/users.php", users, "text/json", "POST")
+        user_post = string_spliter(user_post, 31, user_post.Length)
+        
+        If user_post <> Nothing Then
+
+            string_array_users = user_post.Split("{")
+            'TextBox1.Text = string_array_data(1) + vbCr + string_array_data(2)
+            If string_array_users(1)(1) <> "?" Then
+                list_filler(string_array_users)
+
+                'Label16.Text = string_array(1)(1)
+            Else
+            End If
         End If
-        TextBox1.Text = result_post
+
+
+            'Exit Sub
+
     End Sub
     Public Function string_spliter(ByVal input As String, ByVal first As Integer, ByVal last As Integer)
         Dim string_local As String = ""
@@ -49,12 +77,30 @@ Public Class Form2
         For i = 1 To input.Length - 1
             json = New JSONObject(input(i))
             UID = json.GetProperty("UID").Value
-            If ListBox1.Items.Contains(UID) = False Then
-                'UID_list(Val(UID)) = UID
-                temp_list(Val(UID)) = json.GetProperty("Temp").Value
-                hum_list(Val(UID)) = json.GetProperty("Humidity").Value
-                pulse_list(Val(UID)) = json.GetProperty("Pulse").Value
-                ListBox1.Items.Add(UID)
+            If UID <> Nothing Then ' if UID is valid condition
+                'UID_list(Val(UID))(i) = UID
+                ListBox2.Items.Add(json.GetProperty("Temp").Value)
+                ListBox3.Items.Add(json.GetProperty("Humidity").Value)
+                ListBox4.Items.Add(json.GetProperty("Pulse").Value)
+                temp_list(i) = json.GetProperty("Temp").Value
+                hum_list(i) = json.GetProperty("Humidity").Value
+                pulse_list(i) = json.GetProperty("Pulse").Value
+            End If
+        Next
+    End Sub
+    Public Sub list_filler(ByVal input() As String)
+        Dim json As JSONObject
+        Dim UID As String
+        For i = 1 To input.Length - 1
+            json = New JSONObject(input(i))
+            UID = json.GetProperty("UID").Value
+            If UID <> Nothing Then ' if UID is valid condition
+                If ListBox1.Items.Contains(UID) = False Then
+                    'temp_list(Val(UID)) = json.GetProperty("Temp").Value
+                    'hum_list(Val(UID)) = json.GetProperty("Humidity").Value
+                    'pulse_list(Val(UID)) = json.GetProperty("Pulse").Value
+                    ListBox1.Items.Add(UID)
+                End If
             End If
         Next
 
@@ -108,17 +154,18 @@ sendrequest_error:
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Label6.Text = Date.Now.ToShortDateString
         Label7.Text = Date.Now.ToShortTimeString
         Timer1.Enabled = True
         If My.Computer.Network.IsAvailable Then
-
-            Timer2.Enabled = True
+            server_connect()
+            ' Timer2.Enabled = True
 
         Else
             Label15.Visible = True
         End If
-        
+
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
@@ -137,6 +184,8 @@ sendrequest_error:
     End Sub
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
+        clear_lists()
+        get_data(ListBox1.SelectedItem)
         Label11.Text = pulse_list(ListBox1.SelectedItem)
         Label12.Text = hum_list(ListBox1.SelectedItem)
         Label13.Text = temp_list(ListBox1.SelectedItem)
@@ -153,6 +202,14 @@ sendrequest_error:
         Timer1.Enabled = False
         Timer2.Enabled = False
         Me.Visible = False
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
+
     End Sub
 End Class
 

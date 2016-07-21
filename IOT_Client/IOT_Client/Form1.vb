@@ -114,7 +114,7 @@ load_error:
         If My.Computer.Network.IsAvailable Then
             Label7.Visible = True
             Form2.Timer1.Enabled = True
-            Form2.Timer2.Enabled = True
+            'Form2.Timer2.Enabled = True
             read_data()
         Else
             Label4.Visible = True
