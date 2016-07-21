@@ -26,11 +26,31 @@ Public Class Form2
     Dim data() As Byte
     Dim users() As Byte
     Dim data_list(10) As String
+    Public Sub nothing_label()
+        If ListBox2.Items.Count = 0 Then
+            Label13.Text = "No Data"
+            Label13.ForeColor = Color.DarkRed
+
+        End If
+        If ListBox3.Items.Count = 0 Then
+            Label12.Text = "No Data"
+            Label12.ForeColor = Color.DarkRed
+
+        End If
+        If ListBox4.Items.Count = 0 Then
+            Label11.Text = "No Data"
+            Label11.ForeColor = Color.DarkRed
+
+        End If
+    End Sub
     Public Sub clear_label()
         Label11.Text = ""
         Label12.Text = ""
         Label13.Text = ""
         Label14.Text = ""
+        Label11.ForeColor = DefaultForeColor
+        Label12.ForeColor = DefaultForeColor
+        Label13.ForeColor = DefaultForeColor
     End Sub
     Public Sub clear_lists()
         ListBox2.Items.Clear()
@@ -40,7 +60,7 @@ Public Class Form2
     Public Sub get_data(ByVal index As String)
         result_post = ""
         data = Encoding.UTF8.GetBytes(download_strReq_1 + """" + index + """" + download_strReq_2)
-        result_post = SendRequest("http://autiot.coolpage.biz/users.php", data, "text/json", "POST")
+        result_post = SendRequest(Form3.TextBox5.Text, data, "text/json", "POST")
         result_post = string_spliter(result_post, 31, result_post.Length)
         string_array_data = result_post.Split("{")
         'TextBox1.Text = download_strReq_1 + """" + index + """" + download_strReq_2
@@ -203,6 +223,7 @@ sendrequest_error:
         Label11.Text = pulse_list(ListBox1.SelectedItem)
         Label12.Text = hum_list(ListBox1.SelectedItem)
         Label13.Text = temp_list(ListBox1.SelectedItem)
+        nothing_label()
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick

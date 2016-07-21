@@ -34,6 +34,8 @@ Partial Class Form3
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -96,7 +98,7 @@ Partial Class Form3
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(285, 553)
+        Me.Button1.Location = New System.Drawing.Point(299, 653)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(555, 97)
         Me.Button1.TabIndex = 6
@@ -152,12 +154,33 @@ Partial Class Form3
         Me.Label7.TabIndex = 11
         Me.Label7.Text = "Min"
         '
+        'TextBox5
+        '
+        Me.TextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox5.Location = New System.Drawing.Point(156, 579)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(897, 49)
+        Me.TextBox5.TabIndex = 13
+        Me.TextBox5.Text = "http://autiot.coolpage.biz/users.php"
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Location = New System.Drawing.Point(525, 522)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(128, 42)
+        Me.Label8.TabIndex = 12
+        Me.Label8.Text = "Server"
+        '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1102, 689)
+        Me.ClientSize = New System.Drawing.Size(1120, 795)
         Me.ControlBox = False
+        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -190,4 +213,6 @@ Partial Class Form3
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents Label8 As System.Windows.Forms.Label
 End Class
