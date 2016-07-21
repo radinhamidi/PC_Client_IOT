@@ -56,6 +56,7 @@ Partial Class Form2
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -82,7 +83,7 @@ Partial Class Form2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(1407, 376)
+        Me.Label1.Location = New System.Drawing.Point(1367, 376)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(176, 33)
         Me.Label1.TabIndex = 2
@@ -92,7 +93,7 @@ Partial Class Form2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(1407, 463)
+        Me.Label2.Location = New System.Drawing.Point(1367, 463)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(189, 33)
         Me.Label2.TabIndex = 3
@@ -102,7 +103,7 @@ Partial Class Form2
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(1656, 463)
+        Me.Label3.Location = New System.Drawing.Point(1616, 463)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(0, 33)
         Me.Label3.TabIndex = 4
@@ -111,7 +112,7 @@ Partial Class Form2
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1656, 386)
+        Me.Label4.Location = New System.Drawing.Point(1616, 386)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(0, 33)
         Me.Label4.TabIndex = 5
@@ -264,7 +265,7 @@ Partial Class Form2
         '
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(86, 4)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
         '
         'TableLayoutPanel1
         '
@@ -375,6 +376,12 @@ Partial Class Form2
         Me.Label20.Size = New System.Drawing.Size(0, 29)
         Me.Label20.TabIndex = 19
         '
+        'ContextMenuStrip2
+        '
+        Me.ContextMenuStrip2.ImageScalingSize = New System.Drawing.Size(32, 32)
+        Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
+        Me.ContextMenuStrip2.Size = New System.Drawing.Size(86, 4)
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -449,4 +456,5 @@ Partial Class Form2
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
+    Friend WithEvents ContextMenuStrip2 As System.Windows.Forms.ContextMenuStrip
 End Class

@@ -9,11 +9,14 @@
     Partial Friend Class MyApplication
         Private Sub networkchange() Handles Me.NetworkAvailabilityChanged
             If My.Computer.Network.IsAvailable Then
+                Form2.ListBox1.Enabled = True
                 Form2.Label15.Visible = False
                 Form2.Timer2.Enabled = True
             Else
-                Form2.Label15.Visible = True
                 Form2.Timer2.Enabled = False
+                Form2.ListBox1.Enabled = False
+                Form2.Label15.Visible = True
+
             End If
         End Sub
 

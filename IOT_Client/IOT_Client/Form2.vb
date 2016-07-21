@@ -219,6 +219,10 @@ sendrequest_error:
     Private Sub Label14_Click(sender As Object, e As EventArgs) Handles Label14.Click
 
     End Sub
+
+    Private Sub ContextMenuStrip2_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip2.Opening
+
+    End Sub
 End Class
 
 Public Class JSONObject
