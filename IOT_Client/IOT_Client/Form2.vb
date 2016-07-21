@@ -111,7 +111,14 @@ sendrequest_error:
         Label6.Text = Date.Now.ToShortDateString
         Label7.Text = Date.Now.ToShortTimeString
         Timer1.Enabled = True
-        Timer2.Enabled = True
+        If My.Computer.Network.IsAvailable Then
+
+            Timer2.Enabled = True
+
+        Else
+            Label15.Visible = True
+        End If
+        
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
@@ -136,8 +143,16 @@ sendrequest_error:
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+
         server_connect()
         Label16.Text = Val(Label16.Text) + 1
+    End Sub
+
+    Private Sub Button3_Click_1(sender As Object, e As EventArgs) Handles Button3.Click
+        Form3.Visible = True
+        Timer1.Enabled = False
+        Timer2.Enabled = False
+        Me.Visible = False
     End Sub
 End Class
 

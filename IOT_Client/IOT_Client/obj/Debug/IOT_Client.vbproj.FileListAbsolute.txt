@@ -20,3 +20,4 @@ C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.
 C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Form2.resources
 C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Resources.resources
 C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.vbproj.GenerateResource.Cache
+C:\Users\Sepkjaer\Desktop\IOT_Client\IOT_Client\IOT_Client\obj\Debug\IOT_Client.Form3.resources

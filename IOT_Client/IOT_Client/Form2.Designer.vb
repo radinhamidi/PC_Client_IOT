@@ -46,6 +46,7 @@ Partial Class Form2
         Me.Label15 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label16 = New System.Windows.Forms.Label()
+        Me.Button3 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -257,6 +258,15 @@ Partial Class Form2
         Me.Label16.TabIndex = 22
         Me.Label16.Text = "1"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(632, 837)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(208, 142)
+        Me.Button3.TabIndex = 23
+        Me.Button3.Text = "Setting"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -265,6 +275,7 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1773, 1004)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label15)
@@ -318,4 +329,5 @@ Partial Class Form2
     Friend WithEvents Label15 As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label16 As System.Windows.Forms.Label
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
