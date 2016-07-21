@@ -26,6 +26,12 @@ Public Class Form2
     Dim data() As Byte
     Dim users() As Byte
     Dim data_list(10) As String
+    Public Sub clear_label()
+        Label11.Text = ""
+        Label12.Text = ""
+        Label13.Text = ""
+        Label14.Text = ""
+    End Sub
     Public Sub clear_lists()
         ListBox2.Items.Clear()
         ListBox3.Items.Clear()
@@ -83,9 +89,9 @@ Public Class Form2
                 ListBox2.Items.Add(json.GetProperty("Temp").Value)
                 ListBox3.Items.Add(json.GetProperty("Humidity").Value)
                 ListBox4.Items.Add(json.GetProperty("Pulse").Value)
-                temp_list(i) = json.GetProperty("Temp").Value
-                hum_list(i) = json.GetProperty("Humidity").Value
-                pulse_list(i) = json.GetProperty("Pulse").Value
+                temp_list(Val(UID)) = json.GetProperty("Temp").Value
+                hum_list(Val(UID)) = json.GetProperty("Humidity").Value
+                pulse_list(Val(UID)) = json.GetProperty("Pulse").Value
 
             End If
         Next
@@ -191,6 +197,7 @@ sendrequest_error:
 
     Private Sub ListBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListBox1.SelectedIndexChanged
         clear_lists()
+        clear_label()
         get_data(ListBox1.SelectedItem)
         Label20.Text = name_list(ListBox1.SelectedItem)
         Label11.Text = pulse_list(ListBox1.SelectedItem)
