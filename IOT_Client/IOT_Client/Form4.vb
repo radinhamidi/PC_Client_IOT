@@ -41,7 +41,7 @@
     End Sub
 
     Private Sub Form4_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        ComboBox1.SelectedIndex = 0
     End Sub
 
     Private Sub Chart1_Click(sender As Object, e As EventArgs) Handles Chart1.Click
@@ -49,38 +49,89 @@
     End Sub
 
     Private Sub RadioButton1_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton1.CheckedChanged
-        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
-        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
-        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
+        Select Case ComboBox1.SelectedIndex
+            Case 0
+                Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
+            Case 1
+                Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
+            Case 2
+                Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Point
+        End Select
+
+
+
+
     End Sub
 
     Private Sub RadioButton2_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton2.CheckedChanged
-        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
-        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
-        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
+        Select Case ComboBox1.SelectedIndex
+            Case 0
+                Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
+            Case 1
+                Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
+            Case 2
+                Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.FastPoint
+        End Select
+
+
+
     End Sub
 
     Private Sub RadioButton3_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton3.CheckedChanged
-        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
-        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
-        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
+        Select Case ComboBox1.SelectedIndex
+            Case 0
+                Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
+            Case 1
+                Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
+            Case 2
+                Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Spline
+        End Select
+
+
+
+
     End Sub
 
     Private Sub RadioButton4_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton4.CheckedChanged
-        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
-        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
-        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
+        Select Case ComboBox1.SelectedIndex
+            Case 0
+                Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
+            Case 1
+                Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
+            Case 2
+                Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.StepLine
+        End Select
+
+
+
     End Sub
 
     Private Sub RadioButton5_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton5.CheckedChanged
-        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
-        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
-        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
+        Select Case ComboBox1.SelectedIndex
+            Case 0
+                Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
+            Case 1
+                Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
+            Case 2
+                Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Bar
+        End Select
+
+
+
     End Sub
 
     Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
-        Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
-        Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
-        Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
+        Select Case ComboBox1.SelectedIndex
+            Case 0
+                Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
+            Case 1
+                Chart2.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
+            Case 2
+                Chart3.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
+        End Select
+
+
+
+
     End Sub
 End Class

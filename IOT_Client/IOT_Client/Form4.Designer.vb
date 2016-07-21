@@ -46,6 +46,7 @@ Partial Class Form4
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
         Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Chart3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -228,6 +229,15 @@ Partial Class Form4
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Chart Type"
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Temp", "Pulse", "Humidity"})
+        Me.ComboBox1.Location = New System.Drawing.Point(79, 662)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(257, 33)
+        Me.ComboBox1.TabIndex = 15
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -235,6 +245,7 @@ Partial Class Form4
         Me.AutoSize = True
         Me.ClientSize = New System.Drawing.Size(2815, 1028)
         Me.ControlBox = False
+        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -271,4 +282,5 @@ Partial Class Form4
     Friend WithEvents RadioButton5 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton6 As System.Windows.Forms.RadioButton
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class
