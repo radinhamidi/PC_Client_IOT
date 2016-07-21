@@ -230,6 +230,14 @@ sendrequest_error:
     Private Sub ContextMenuStrip2_Opening(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles ContextMenuStrip2.Opening
 
     End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
+        Form4.Visible = True
+        Form4.plot_temp(ListBox2.Items.Count)
+        Form4.plot_hum(ListBox3.Items.Count)
+        Form4.plot_pulse(ListBox4.Items.Count)
+        Me.Visible = False
+    End Sub
 End Class
 
 Public Class JSONObject

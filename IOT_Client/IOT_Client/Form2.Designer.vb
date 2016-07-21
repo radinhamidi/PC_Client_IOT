@@ -57,6 +57,7 @@ Partial Class Form2
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.Button4 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -140,7 +141,7 @@ Partial Class Form2
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(1507, 552)
+        Me.Label6.Location = New System.Drawing.Point(1479, 543)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(40, 42)
         Me.Label6.TabIndex = 10
@@ -150,7 +151,7 @@ Partial Class Form2
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(1507, 609)
+        Me.Label7.Location = New System.Drawing.Point(1479, 600)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(40, 42)
         Me.Label7.TabIndex = 11
@@ -245,7 +246,7 @@ Partial Class Form2
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label15.ForeColor = System.Drawing.Color.Red
-        Me.Label15.Location = New System.Drawing.Point(28, 901)
+        Me.Label15.Location = New System.Drawing.Point(18, 24)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(543, 42)
         Me.Label15.TabIndex = 20
@@ -265,7 +266,7 @@ Partial Class Form2
         '
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(86, 4)
         '
         'TableLayoutPanel1
         '
@@ -382,6 +383,15 @@ Partial Class Form2
         Me.ContextMenuStrip2.Name = "ContextMenuStrip2"
         Me.ContextMenuStrip2.Size = New System.Drawing.Size(86, 4)
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(397, 837)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(208, 142)
+        Me.Button4.TabIndex = 32
+        Me.Button4.Text = "Charts"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
@@ -390,6 +400,7 @@ Partial Class Form2
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1773, 1004)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label19)
         Me.Controls.Add(Me.Label18)
@@ -457,4 +468,5 @@ Partial Class Form2
     Friend WithEvents Label16 As System.Windows.Forms.Label
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents ContextMenuStrip2 As System.Windows.Forms.ContextMenuStrip
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class
