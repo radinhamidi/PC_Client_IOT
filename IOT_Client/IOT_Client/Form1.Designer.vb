@@ -50,6 +50,7 @@ Partial Class Form1
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Info
         Me.TextBox1.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(419, 139)
         Me.TextBox1.Name = "TextBox1"
@@ -58,6 +59,7 @@ Partial Class Form1
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.SystemColors.Info
         Me.TextBox2.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(419, 241)
         Me.TextBox2.Name = "TextBox2"
