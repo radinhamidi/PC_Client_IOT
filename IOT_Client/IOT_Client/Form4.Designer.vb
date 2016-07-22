@@ -72,6 +72,7 @@ Partial Class Form4
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(876, 877)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(1075, 101)
@@ -155,9 +156,10 @@ Partial Class Form4
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Checked = True
+        Me.RadioButton1.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton1.Location = New System.Drawing.Point(106, 68)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(92, 29)
+        Me.RadioButton1.Size = New System.Drawing.Size(127, 34)
         Me.RadioButton1.TabIndex = 7
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Point"
@@ -166,9 +168,10 @@ Partial Class Form4
         'RadioButton2
         '
         Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton2.Location = New System.Drawing.Point(477, 68)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(140, 29)
+        Me.RadioButton2.Size = New System.Drawing.Size(205, 34)
         Me.RadioButton2.TabIndex = 8
         Me.RadioButton2.Text = "Fast Point"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -176,9 +179,10 @@ Partial Class Form4
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
+        Me.RadioButton3.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton3.Location = New System.Drawing.Point(890, 68)
         Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(103, 29)
+        Me.RadioButton3.Size = New System.Drawing.Size(142, 34)
         Me.RadioButton3.TabIndex = 9
         Me.RadioButton3.Text = "Spline"
         Me.RadioButton3.UseVisualStyleBackColor = True
@@ -186,9 +190,10 @@ Partial Class Form4
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
+        Me.RadioButton4.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton4.Location = New System.Drawing.Point(1338, 68)
         Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(128, 29)
+        Me.RadioButton4.Size = New System.Drawing.Size(177, 34)
         Me.RadioButton4.TabIndex = 10
         Me.RadioButton4.Text = "StepLine"
         Me.RadioButton4.UseVisualStyleBackColor = True
@@ -196,9 +201,10 @@ Partial Class Form4
         'RadioButton5
         '
         Me.RadioButton5.AutoSize = True
+        Me.RadioButton5.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RadioButton5.Location = New System.Drawing.Point(1842, 68)
         Me.RadioButton5.Name = "RadioButton5"
-        Me.RadioButton5.Size = New System.Drawing.Size(76, 29)
+        Me.RadioButton5.Size = New System.Drawing.Size(104, 34)
         Me.RadioButton5.TabIndex = 11
         Me.RadioButton5.Text = "Bar"
         Me.RadioButton5.UseVisualStyleBackColor = True
@@ -210,7 +216,8 @@ Partial Class Form4
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
-        Me.GroupBox1.Location = New System.Drawing.Point(464, 662)
+        Me.GroupBox1.Font = New System.Drawing.Font("Cooper Black", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(409, 647)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(2107, 168)
         Me.GroupBox1.TabIndex = 13
@@ -219,11 +226,12 @@ Partial Class Form4
         '
         'ComboBox1
         '
+        Me.ComboBox1.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Temp", "Pulse", "Humidity"})
         Me.ComboBox1.Location = New System.Drawing.Point(79, 662)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(257, 33)
+        Me.ComboBox1.Size = New System.Drawing.Size(257, 38)
         Me.ComboBox1.TabIndex = 15
         '
         'Form4
