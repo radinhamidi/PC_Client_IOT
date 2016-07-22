@@ -37,6 +37,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Form2.Visible = True
         clear_label()
+        Timer1.Enabled = False
         Me.Visible = False
     End Sub
 
@@ -133,5 +134,15 @@
 
 
 
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Form2.get_data(Form2.ListBox1.SelectedItem)
+        Chart1.Series(0).Points.Clear()
+        Chart2.Series(0).Points.Clear()
+        Chart3.Series(0).Points.Clear()
+        plot_temp(Form2.ListBox2.Items.Count)
+        plot_hum(Form2.ListBox3.Items.Count)
+        plot_pulse(Form2.ListBox4.Items.Count)
     End Sub
 End Class

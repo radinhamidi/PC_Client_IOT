@@ -7,7 +7,7 @@ Public Class Form2
     Dim client As New WebClient
     Dim upload_strReq As String = "{""reqtype"":""upload"", ""uid"":""1"" , ""password"":""123"", ""reqtime"":""12356"",""temperature"":""30"",""humidity"":""27.23"",""pulse"":""3002""}"
     Dim download_strReq_1 As String = "{""reqtype"":""download"", ""uid"":"
-    Dim download_strReq_2 As String = ", ""password"":""123"", ""reqtime"":""12356""}"
+    Dim download_strReq_2 As String = ", ""password"":""123"", ""reqtime"":""12356"",""count"":""70""}"
     Dim get_users As String = "{""reqtype"":""getusers""}"
     Dim strData As String
     Dim dataStream As Stream
@@ -58,6 +58,7 @@ Public Class Form2
     End Sub
     Public Sub get_data(ByVal index As String)
         On Error GoTo get_data_error
+        clear_lists()
         result_post = ""
         data = Encoding.UTF8.GetBytes(download_strReq_1 + """" + index + """" + download_strReq_2)
         result_post = SendRequest(Form3.TextBox5.Text, data, "text/json", "POST")
@@ -264,7 +265,8 @@ sendrequest_error:
         Form4.plot_temp(ListBox2.Items.Count)
         Form4.plot_hum(ListBox3.Items.Count)
         Form4.plot_pulse(ListBox4.Items.Count)
-        Me.Visible = False
+        Form4.Timer1.Enabled = True
+        ' Me.Visible = False
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
