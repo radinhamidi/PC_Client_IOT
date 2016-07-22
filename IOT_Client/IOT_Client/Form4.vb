@@ -1,4 +1,7 @@
 ﻿Public Class Form4
+    Public Sub reset_radio_group()
+        RadioButton1.Checked = True
+    End Sub
     Public Sub clear_label()
         Label1.Visible = False
         Label2.Visible = False
@@ -144,5 +147,9 @@
         plot_temp(Form2.ListBox2.Items.Count)
         plot_hum(Form2.ListBox3.Items.Count)
         plot_pulse(Form2.ListBox4.Items.Count)
+    End Sub
+
+    Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
+        reset_radio_group()
     End Sub
 End Class

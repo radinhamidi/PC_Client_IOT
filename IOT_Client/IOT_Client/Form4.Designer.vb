@@ -66,7 +66,7 @@ Partial Class Form4
         Me.Chart1.Name = "Chart1"
         Me.Chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry
         Series1.ChartArea = "ChartArea1"
-        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
         Series1.Legend = "Legend1"
         Series1.Name = "Temp"
         Me.Chart1.Series.Add(Series1)
@@ -95,7 +95,7 @@ Partial Class Form4
         Me.Chart2.Name = "Chart2"
         Me.Chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry
         Series2.ChartArea = "ChartArea1"
-        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
         Series2.Legend = "Legend1"
         Series2.Name = "Pulse"
         Me.Chart2.Series.Add(Series2)
@@ -113,7 +113,7 @@ Partial Class Form4
         Me.Chart3.Name = "Chart3"
         Me.Chart3.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry
         Series3.ChartArea = "ChartArea1"
-        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline
+        Series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Point
         Series3.Legend = "Legend1"
         Series3.Name = "Humidity"
         Me.Chart3.Series.Add(Series3)

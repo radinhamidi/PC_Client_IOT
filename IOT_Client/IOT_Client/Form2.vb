@@ -268,7 +268,7 @@ sendrequest_error:
         Form4.Label20.Text = Label20.Text
         Form4.Timer1.Interval = Val(Form3.TextBox1.Text)
         Form4.Timer1.Enabled = True
-        ' Me.Visible = False
+        Me.Visible = False
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
