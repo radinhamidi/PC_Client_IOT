@@ -47,7 +47,6 @@ Public Class Form2
         Label11.Text = ""
         Label12.Text = ""
         Label13.Text = ""
-        Label14.Text = ""
         Label11.ForeColor = DefaultForeColor
         Label12.ForeColor = DefaultForeColor
         Label13.ForeColor = DefaultForeColor
@@ -58,6 +57,7 @@ Public Class Form2
         ListBox4.Items.Clear()
     End Sub
     Public Sub get_data(ByVal index As String)
+        On Error GoTo get_data_error
         result_post = ""
         data = Encoding.UTF8.GetBytes(download_strReq_1 + """" + index + """" + download_strReq_2)
         result_post = SendRequest(Form3.TextBox5.Text, data, "text/json", "POST")
@@ -65,9 +65,13 @@ Public Class Form2
         string_array_data = result_post.Split("{")
         'TextBox1.Text = download_strReq_1 + """" + index + """" + download_strReq_2
         list_maker(string_array_data)
+        Exit Sub
+get_data_error:
+        Label21.Visible = True
+        Timer3.Enabled = True
     End Sub
     Public Sub server_connect()
-
+        On Error GoTo server_connect_error
         user_post = ""
         users = Encoding.UTF8.GetBytes(get_users)
         user_post = SendRequest("http://autiot.coolpage.biz/users.php", users, "text/json", "POST")
@@ -85,7 +89,10 @@ Public Class Form2
             End If
         End If
 
-
+        Exit Sub
+server_connect_error:
+        Label21.Visible = True
+        Timer3.Enabled = True
             'Exit Sub
 
     End Sub
@@ -258,6 +265,11 @@ sendrequest_error:
         Form4.plot_hum(ListBox3.Items.Count)
         Form4.plot_pulse(ListBox4.Items.Count)
         Me.Visible = False
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        Label21.Visible = False
+        Timer3.Enabled = False
     End Sub
 End Class
 

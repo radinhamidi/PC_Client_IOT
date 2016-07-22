@@ -59,6 +59,8 @@ Partial Class Form2
         Me.Label20 = New System.Windows.Forms.Label()
         Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -393,14 +395,33 @@ Partial Class Form2
         Me.Button4.Text = "Charts"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Label21
+        '
+        Me.Label21.AutoSize = True
+        Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.875!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label21.ForeColor = System.Drawing.Color.Red
+        Me.Label21.Location = New System.Drawing.Point(18, 24)
+        Me.Label21.Name = "Label21"
+        Me.Label21.Size = New System.Drawing.Size(220, 42)
+        Me.Label21.TabIndex = 33
+        Me.Label21.Text = "Server Error"
+        Me.Label21.Visible = False
+        '
+        'Timer3
+        '
+        Me.Timer3.Interval = 200
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(12.0!, 25.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.BackColor = System.Drawing.Color.Silver
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(1773, 1004)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label21)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label19)
@@ -471,4 +492,6 @@ Partial Class Form2
     Friend WithEvents Label20 As System.Windows.Forms.Label
     Friend WithEvents ContextMenuStrip2 As System.Windows.Forms.ContextMenuStrip
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Label21 As System.Windows.Forms.Label
+    Friend WithEvents Timer3 As System.Windows.Forms.Timer
 End Class
