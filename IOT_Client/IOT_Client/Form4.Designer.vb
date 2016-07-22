@@ -72,6 +72,7 @@ Partial Class Form4
         '
         'Button1
         '
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(876, 877)
         Me.Button1.Name = "Button1"
@@ -216,6 +217,7 @@ Partial Class Form4
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
         Me.GroupBox1.Controls.Add(Me.RadioButton2)
         Me.GroupBox1.Controls.Add(Me.RadioButton1)
+        Me.GroupBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.GroupBox1.Font = New System.Drawing.Font("Cooper Black", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(409, 647)
         Me.GroupBox1.Name = "GroupBox1"

@@ -67,6 +67,7 @@ Partial Class Form2
         '
         'Button1
         '
+        Me.Button1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button1.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(866, 837)
         Me.Button1.Name = "Button1"
@@ -77,6 +78,7 @@ Partial Class Form2
         '
         'Button2
         '
+        Me.Button2.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button2.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button2.Location = New System.Drawing.Point(1322, 837)
         Me.Button2.Name = "Button2"
@@ -225,6 +227,7 @@ Partial Class Form2
         '
         'ListBox1
         '
+        Me.ListBox1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.ListBox1.Font = New System.Drawing.Font("Copperplate Gothic Bold", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 26
@@ -261,6 +264,7 @@ Partial Class Form2
         '
         'Button3
         '
+        Me.Button3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button3.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(632, 837)
         Me.Button3.Name = "Button3"
@@ -396,6 +400,7 @@ Partial Class Form2
         '
         'Button4
         '
+        Me.Button4.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Button4.Font = New System.Drawing.Font("Copperplate Gothic Bold", 10.125!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button4.Location = New System.Drawing.Point(397, 837)
         Me.Button4.Name = "Button4"
