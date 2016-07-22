@@ -44,7 +44,6 @@ Partial Class Form4
         Me.RadioButton3 = New System.Windows.Forms.RadioButton()
         Me.RadioButton4 = New System.Windows.Forms.RadioButton()
         Me.RadioButton5 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton6 = New System.Windows.Forms.RadioButton()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         CType(Me.Chart1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -177,7 +176,7 @@ Partial Class Form4
         'RadioButton3
         '
         Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(835, 68)
+        Me.RadioButton3.Location = New System.Drawing.Point(890, 68)
         Me.RadioButton3.Name = "RadioButton3"
         Me.RadioButton3.Size = New System.Drawing.Size(103, 29)
         Me.RadioButton3.TabIndex = 9
@@ -187,7 +186,7 @@ Partial Class Form4
         'RadioButton4
         '
         Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(1194, 68)
+        Me.RadioButton4.Location = New System.Drawing.Point(1338, 68)
         Me.RadioButton4.Name = "RadioButton4"
         Me.RadioButton4.Size = New System.Drawing.Size(128, 29)
         Me.RadioButton4.TabIndex = 10
@@ -197,26 +196,15 @@ Partial Class Form4
         'RadioButton5
         '
         Me.RadioButton5.AutoSize = True
-        Me.RadioButton5.Location = New System.Drawing.Point(1522, 68)
+        Me.RadioButton5.Location = New System.Drawing.Point(1842, 68)
         Me.RadioButton5.Name = "RadioButton5"
         Me.RadioButton5.Size = New System.Drawing.Size(76, 29)
         Me.RadioButton5.TabIndex = 11
         Me.RadioButton5.Text = "Bar"
         Me.RadioButton5.UseVisualStyleBackColor = True
         '
-        'RadioButton6
-        '
-        Me.RadioButton6.AutoSize = True
-        Me.RadioButton6.Location = New System.Drawing.Point(1855, 68)
-        Me.RadioButton6.Name = "RadioButton6"
-        Me.RadioButton6.Size = New System.Drawing.Size(74, 29)
-        Me.RadioButton6.TabIndex = 12
-        Me.RadioButton6.Text = "Pie"
-        Me.RadioButton6.UseVisualStyleBackColor = True
-        '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.RadioButton6)
         Me.GroupBox1.Controls.Add(Me.RadioButton5)
         Me.GroupBox1.Controls.Add(Me.RadioButton4)
         Me.GroupBox1.Controls.Add(Me.RadioButton3)
@@ -280,7 +268,6 @@ Partial Class Form4
     Friend WithEvents RadioButton3 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton4 As System.Windows.Forms.RadioButton
     Friend WithEvents RadioButton5 As System.Windows.Forms.RadioButton
-    Friend WithEvents RadioButton6 As System.Windows.Forms.RadioButton
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
 End Class

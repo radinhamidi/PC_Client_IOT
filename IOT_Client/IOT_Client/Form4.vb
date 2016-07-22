@@ -120,7 +120,7 @@
 
     End Sub
 
-    Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs) Handles RadioButton6.CheckedChanged
+    Private Sub RadioButton6_CheckedChanged(sender As Object, e As EventArgs)
         Select Case ComboBox1.SelectedIndex
             Case 0
                 Chart1.Series(0).ChartType = DataVisualization.Charting.SeriesChartType.Pie
